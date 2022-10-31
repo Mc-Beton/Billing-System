@@ -2,6 +2,8 @@ package com.billingUser.service;
 
 import com.billingSys.clients.fraud.FraudClient;
 import com.billingSys.clients.fraud.FraudResponse;
+import com.billingSys.clients.notification.NotificationClient;
+import com.billingSys.clients.notification.NotificationRequest;
 import com.billingUser.domain.BillingUser;
 import com.billingUser.domain.BillingUserDto;
 import com.billingUser.mapper.BillingUserMap;
@@ -18,6 +20,7 @@ public class BillingUserService {
     private final BillingUserRepository repository;
     private final BillingUserMap mapper;
     private final FraudClient fraudClient;
+    private final NotificationClient notificationClient;
 
     public void createNewUser(BillingUserDto userDto) {
         BillingUser user = BillingUser.builder()
@@ -32,6 +35,14 @@ public class BillingUserService {
         if(fraudResponse.getIsFraud()) {
             throw new IllegalStateException("Fraud");
         }
+
+        notificationClient.sendNote(
+                new NotificationRequest(
+                        user.getId(),
+                        user.getEmail(),
+                        String.format("User of id %s, has been created. Welcome %s to our billing System 2000", user.getId(), user.getName())
+                )
+        );
     }
 
     public List<BillingUserDto> getAllUsers() {

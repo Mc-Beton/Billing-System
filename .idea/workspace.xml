@@ -6,30 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="a69b3d53-fdfb-4ea7-9891-4f63af16c591" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/../User/User.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billingUser/src/main/java/com/billingUser/mapper/BillingUserMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/billingSys/clients/fraud/FraudClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/billingSys/clients/fraud/FraudResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/src/main/java/com/fraud/controller/FraudController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/src/main/java/com/fraud/repository/FraudRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/src/main/java/com/fraud/service/FraudService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/billingSys/clients/notification/NotificationClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/billingSys/clients/notification/NotificationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/notification/controller/NotificationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/notification/domain/Notification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/notification/repository/NotificationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/notification/service/NotificationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billingUser/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/billingUser/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billingUser/src/main/java/com/billingUser/BillingUserApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/billingUser/src/main/java/com/billingUser/BillingUserApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billingUser/src/main/java/com/billingUser/controller/BillingUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/billingUser/src/main/java/com/billingUser/controller/BillingUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billingUser/src/main/java/com/billingUser/domain/BillingUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/billingUser/src/main/java/com/billingUser/domain/BillingUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billingUser/src/main/java/com/billingUser/domain/BillingUserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/billingUser/src/main/java/com/billingUser/domain/BillingUserDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/billingUser/src/main/java/com/billingUser/service/BillingUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/billingUser/src/main/java/com/billingUser/service/BillingUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billingUser/target/classes/com/billingUser/BillingUserApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/billingUser/target/classes/com/billingUser/BillingUserApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billingUser/target/classes/com/billingUser/controller/BillingUserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/billingUser/target/classes/com/billingUser/controller/BillingUserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billingUser/target/classes/com/billingUser/domain/BillingUser$BillingUserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/billingUser/target/classes/com/billingUser/domain/BillingUser$BillingUserBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billingUser/target/classes/com/billingUser/domain/BillingUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/billingUser/target/classes/com/billingUser/domain/BillingUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billingUser/target/classes/com/billingUser/domain/BillingUserDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/billingUser/target/classes/com/billingUser/domain/BillingUserDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billingUser/target/classes/com/billingUser/service/BillingUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/billingUser/target/classes/com/billingUser/service/BillingUserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/src/main/java/com/fraud/FraudApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/java/com/fraud/FraudApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -67,12 +55,15 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.billingSys.notification" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.billingSys.clients.fraud" />
       <recent name="com.billingUser.domain" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.BillingUserApp">
+  <component name="RunManager" selected="Spring Boot.FraudApp">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -140,6 +131,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NotificationApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="notification" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.notification.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.notification.NotificationApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -153,11 +157,13 @@
       <item itemvalue="Spring Boot.BillingUserApp" />
       <item itemvalue="Spring Boot.FraudApp" />
       <item itemvalue="Spring Boot.EurekaServerApp" />
+      <item itemvalue="Spring Boot.NotificationApp" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.BillingUserApp" />
         <item itemvalue="Spring Boot.FraudApp" />
+        <item itemvalue="Spring Boot.BillingUserApp" />
+        <item itemvalue="Spring Boot.NotificationApp" />
         <item itemvalue="Spring Boot.EurekaServerApp" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       </list>
@@ -174,7 +180,7 @@
       <workItem from="1666270407903" duration="5997000" />
       <workItem from="1666286576524" duration="632000" />
       <workItem from="1666963967868" duration="2868000" />
-      <workItem from="1667222733863" duration="6492000" />
+      <workItem from="1667222733863" duration="8920000" />
     </task>
     <servers />
   </component>
